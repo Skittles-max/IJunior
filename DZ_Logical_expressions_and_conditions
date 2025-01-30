@@ -1,0 +1,9 @@
+age = int(input("Введите ваш возраст "))
+citizenship = input("Введите ваше гражданство(Например: РФ) ").upper()
+disqualification = input("У вас есть какие либо ограничения для голосования?(Да/Нет) ").upper()
+
+
+if age >= 18 and citizenship == "РФ" and disqualification == "НЕТ":
+    print("Успешного голосования")
+else:
+    print("Вы не можете голосовать")
