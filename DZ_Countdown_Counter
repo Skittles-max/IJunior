@@ -1,0 +1,8 @@
+try:
+    countdown = int(input("Введите целое положительное число "))
+
+    while countdown >= 0:
+        print(countdown)
+        countdown -= 1
+except:
+    print("Ошибка! Введите целое положительное число")
