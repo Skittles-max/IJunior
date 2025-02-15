@@ -11,7 +11,7 @@ def empty_function():
 
 def even_numbers(n):
     list_generation = []
-    for number in range(0, n):
+    for number in range(n + 1):
         if number % 2 == 0:
             list_generation.append(number)
             yield number
@@ -26,5 +26,6 @@ def max_number_test():
 
 if __name__ == "__main__":
     max_number_test()
-    even_numbers(9)
-
+    test_even = even_numbers(8)
+    for even in test_even:
+        print(even)
